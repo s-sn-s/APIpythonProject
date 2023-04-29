@@ -1,3 +1,5 @@
+import os
+
 import requests
 import json
 import jsonpath
@@ -5,7 +7,7 @@ import jsonpath
 
 def test_put():
     my_api_link = "https://reqres.in/api/users/2"
-    json_file_path = "/Users/savinshetty/PycharmProjects/pythonProject/venv/myputdata.json"
+    json_file_path = os.getcwd() + "/myputdata.json"
     # print(json_file_path)
 
     data = open(json_file_path, mode='r')
